@@ -2,23 +2,20 @@
   "name": "webhooktrigger",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "node dist/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jeethan-crasta/webhookTrigger.git"
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.964.0",
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "kafkajs": "^2.2.4",
+    "nano": "^11.0.3",
+    "undici": "^7.18.2"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jeethan-crasta/webhookTrigger/issues"
-  },
-  "homepage": "https://github.com/Jeethan-crasta/webhookTrigger#readme",
   "devDependencies": {
     "@types/node": "^25.0.3",
     "typescript": "^5.9.3"
